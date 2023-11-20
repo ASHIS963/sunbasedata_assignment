@@ -1,0 +1,40 @@
+<!-- add_customer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Customer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Customer</h2>
+        <form id="addCustomerForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br>
+
+            <button type="button" onclick="createCustomer()">Create Customer</button>
+        </form>
+
+        <button onclick="goToCustomerList()">Back to Customer List</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
